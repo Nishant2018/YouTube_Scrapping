@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'webscrappingyoutube'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C75530C872FD4B5BA81792D74452A537 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9CFD767272214724BF15F545E34D5BBC }}
