@@ -10,7 +10,7 @@
 
 ## About
 
-Briefly introduce your project, providing context and purpose. Explain what this YouTube data scraper does, how it benefits users, and the technologies/languages/libraries used.
+The YouTube Data Scraper with Flask is a web application designed to extract information from YouTube based on user-provided search queries. Leveraging the Flask framework, this application offers a simple and user-friendly interface for users to input their desired search terms and retrieve relevant data from YouTube videos.
 
 ## Features
 
@@ -68,4 +68,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgements
 
-- Any acknowledgements or credits you want to mention.
+- **YouTube**: Providing the platform that inspired the need for this tool.
+- **Flask Community**: Creating the efficient web framework used in this project.
+- **Requests and BeautifulSoup Libraries**: Enabling easy web scraping from YouTube.
+- **Open Source Community**: Offering valuable resources and support.
+- **Contributors**: Thanks to all who contributed, provided feedback, or suggestions.
+
+---
