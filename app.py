@@ -10,6 +10,7 @@ from pytube import Channel
 
 application = Flask(__name__, static_folder='static') # initializing a flask app
 app=application
+CORS(app)
 
 @app.route('/',methods=['GET'])  # route to display the home page
 @cross_origin()
@@ -59,17 +60,10 @@ def index():
 
                 mydict = {"Video_url":i ,"Thumbnail_url":Thumbnail_link,"Title":Title,"Views":views,"Upload_date":Date}
                 reviews.append(mydict)
-
-            #client = pymongo.MongoClient("mongodb+srv://Nishant_17j03:<Password>@nishant17j03.focohu4.mongodb.net/?retryWrites=true&w=majority")
-            #db = client['Video_Scrap']
-            #review_col = db['Scrap_Data']
-            #review_col.insert_many(reviews)
             return render_template('results.html', reviews=reviews)
         except Exception as e:
             print('The Exception message is: ',e)
             return 'something is wrong'
-    # return render_template('results.html')
-
     else:
         return render_template('index.html')
 
